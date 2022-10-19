@@ -9,11 +9,15 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Tooltip from '@mui/material/Tooltip';
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import profile from '../../assets/profile.png';
+import UseUser from '../../hooks/useUser';
 import './style.css';
 
+
 export default function MenuHeader() {
+    const { removeToken } = UseUser();
+    const navigate = useNavigate();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -23,8 +27,11 @@ export default function MenuHeader() {
         setAnchorEl(null);
     };
     const handleExit = () => {
-        console.log('teste');
-        return <Link to="/">Login</Link>
+        return removeToken();
+    }
+
+    const handleClickAddAccount = () => {
+        return navigate('/signUp');
     }
     return (
         <>
@@ -93,7 +100,11 @@ export default function MenuHeader() {
                     <ListItemIcon>
                         <PersonAdd fontSize="small" />
                     </ListItemIcon>
-                    Adicionar Conta
+                    <span
+                        onClick={() => handleClickAddAccount()}
+                    >
+                        Novo Usuário
+                    </span>
                 </MenuItem>
                 <MenuItem
                 >

@@ -11,6 +11,7 @@ import InputLabel from '@mui/material/InputLabel';
 import * as React from 'react';
 import './style.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Register() {
     const { name, setName, email, setEmail, pass, setPass } = UseUser();
@@ -38,14 +39,19 @@ export default function Register() {
             if (!email || !name || !pass || !confirmation) { return alert("Preencha todos os campos!") }
             if (pass !== confirmation) { return alert("O Campo Senha e Confirmar Senha nao Conferem!") }
 
-            await api.post("/user", {
+            const response = await api.post("/user", {
                 nome: name,
                 email,
                 senha: pass,
                 tipo: 'client'
             })
+            const { token, usuario } = response.data;
+            console.log(usuario);
+            alert("Login Efetuado com Sucesso!!");
+            setToken(token);
 
         } catch (error) {
+            console.log(error);
             return alert(error.response.data.message)
 
         }
@@ -148,7 +154,7 @@ export default function Register() {
 
                 </div>
                 <span>Já tenho cadastro, <a href='/signIn'>clique aqui!</a></span>
-                <a href="/">Sair</a>
+                <Link to="/home">Sair</Link>
             </form>
         </div>
     )
