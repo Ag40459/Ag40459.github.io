@@ -1,8 +1,7 @@
 import './style.css';
 
-export default function SignIn() {
 
+export default function SignIn() {
     return (
-        <h1>Sign In</h1>
-    )
+        <h1>Sing In</h1>)
 }
