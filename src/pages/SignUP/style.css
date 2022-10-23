@@ -1,9 +1,11 @@
 .container_register {
+    position: absolute;
+    top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
 }
 
@@ -22,10 +24,16 @@
     height: 90%;
     width: 90%;
     background-color: #fff;
-    gap: 2rem;
     border-radius: 1rem;
+    z-index: 4;
 }
 
 .container_register form span {
     margin-top: 3rem;
+}
+
+#img_signUp {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
 }

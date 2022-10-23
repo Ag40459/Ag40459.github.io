@@ -1,3 +1,5 @@
+import api from '../../services/api';
+import UseUser from '../../hooks/useUser';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { Button } from '@mui/material';
@@ -7,15 +9,12 @@ import Input from '@mui/material/Input';
 import InputAdornment from '@mui/material/InputAdornment';
 import InputLabel from '@mui/material/InputLabel';
 import * as React from 'react';
-import { useState } from 'react';
-import Close from '../../assets/close.png';
-import UseUser from '../../hooks/useUser';
-import api from '../../services/api';
 import './style.css';
-
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Register() {
-    const { name, setName, email, setEmail, pass, setPass, setUser, openRegister, setOpenRegister } = UseUser();
+    const { name, setName, email, setEmail, pass, setPass } = UseUser();
     const [confirmation, setConfirmation] = useState();
     const [values, setValues] = useState({
         password: false,
@@ -47,11 +46,12 @@ export default function Register() {
                 tipo: 'client'
             })
             const { token, usuario } = response.data;
-            setUser(usuario)
+            console.log(usuario);
             alert("Login Efetuado com Sucesso!!");
             setToken(token);
 
         } catch (error) {
+            console.log(error);
             return alert(error.response.data.message)
 
         }
@@ -65,17 +65,11 @@ export default function Register() {
         setPass('');
         setConfirmation('');
     }
-    const handleClose = () => {
-        return setOpenRegister(!openRegister)
-    };
+
     return (
         <div className='container_register'>
 
             <form onSubmit={handleSubmit}>
-                <img
-                    id='img_signUp'
-                    onClick={() => handleClose()}
-                    src={Close} alt="Botão Fechar" />
                 <FormControl sx={{ width: '90%', paddingTop: 1 }} variant="standard">
                     <InputLabel >Nome e Sobrenome</InputLabel>
                     <Input
@@ -159,7 +153,8 @@ export default function Register() {
                     </Button>
 
                 </div>
-
+                <span>Já tenho cadastro, <a href='/signIn'>clique aqui!</a></span>
+                <Link to="/home">Sair</Link>
             </form>
         </div>
     )

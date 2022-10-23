@@ -1,14 +1,10 @@
 .container_login {
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 33vh;
-    width: 50vw;
-    top: 2.5rem;
-    left: 8rem;
-    z-index: 5;
+    height: 100vh;
+    width: 100vw;
 }
 
 .container_login_button {
@@ -19,7 +15,6 @@
 }
 
 .container_login form {
-    position: relative;
     padding-top: 2.2rem;
     display: flex;
     flex-direction: column;
@@ -27,17 +22,10 @@
     height: 90%;
     width: 90%;
     background-color: #fff;
+    gap: 2rem;
     border-radius: 1rem;
-    border: 0.1rem solid lightgray
 }
 
 .container_login form span {
     margin-top: 3rem;
-}
-
-form img {
-    width: 1rem;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
 }

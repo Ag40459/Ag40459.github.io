@@ -1,3 +1,4 @@
+import { Link, useNavigate } from 'react-router-dom';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { Button } from '@mui/material';
@@ -8,27 +9,24 @@ import InputAdornment from '@mui/material/InputAdornment';
 import InputLabel from '@mui/material/InputLabel';
 import * as React from 'react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import UseUser from '../../hooks/useUser';
 import api from '../../services/api';
 import './style.css';
 
-export default function SignIn() {
+export default function SigIn() {
     const navigate = useNavigate();
-    const { email, setEmail, pass, setPass, setToken, setUser, openSignIn, setOpenSignIn, Close } = UseUser();
+    const { email, setEmail, pass, setPass, setToken } = UseUser();
     const [values, setValues] = useState({
         password: false,
         showPassword: false,
     });
 
     const handleClickShowPassword = () => {
-        return setValues({
+        setValues({
             showPassword: !values.showPassword,
         });
     };
-    const handleClose = () => {
-        return setOpenSignIn(!openSignIn)
-    };
+
     async function handleSubmit(event) {
         event.preventDefault();
         try {
@@ -42,17 +40,15 @@ export default function SignIn() {
                 senha: pass
             })
             const { token, usuario } = response.data;
-            console.log(usuario);
-            setUser(usuario);
+            alert("Login Efetuado com Sucesso!!");
             setToken(token);
-            setOpenSignIn(!openSignIn);
+
 
         } catch (error) {
             return alert(error.response.data.message);
 
         }
         alert('Login Efetuado com Sucesso!');
-
         return navigate('/home');
 
     }
@@ -66,13 +62,9 @@ export default function SignIn() {
         <div className='container_login'>
 
             <form onSubmit={handleSubmit}>
-                <img
-                    onClick={() => handleClose()}
-                    src={Close} alt="Botão Fechar" />
+
                 <FormControl sx={{ width: '90%', paddingTop: 1 }} variant="standard">
-                    <InputLabel
-                        sx={{ fontSize: '15px' }}
-                    >E-mail</InputLabel>
+                    <InputLabel >E-mail</InputLabel>
                     <Input
                         sx={{ width: '100%', marginLeft: 0 }}
                         type='text'
@@ -82,10 +74,8 @@ export default function SignIn() {
 
                 </FormControl>
 
-                <FormControl sx={{ width: '90%', paddingTop: 2 }} variant="standard">
-                    <InputLabel
-                        sx={{ fontSize: '15px', marginTop: 1 }}
-                    >Senha</InputLabel>
+                <FormControl sx={{ width: '90%', paddingTop: 1 }} variant="standard">
+                    <InputLabel >Senha</InputLabel>
                     <Input
                         sx={{ width: '100%', marginLeft: 0 }}
                         type={values.showPassword ? 'text' : 'password'}
@@ -125,7 +115,8 @@ export default function SignIn() {
                     </Button>
 
                 </div>
-
+                <span>Ainda não tem cadastro, <a href='/signUp'>clique aqui!</a></span>
+                <Link to="/">Sair</Link>
             </form>
         </div>
     )

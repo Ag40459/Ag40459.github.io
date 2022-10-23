@@ -1,22 +1,48 @@
 import { Outlet } from 'react-router-dom';
-import './style.css';
+import Logo from '../../assets/logoNinacai.jpeg';
 import CustonMenu from '../../components/CustonMenu';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import UseUser from '../../hooks/useUser';
+import './style.css';
 
 export default function Header() {
+    const { token, openSignIn, setOpenSignIn, openRegister, setOpenRegister, user } = UseUser();
+
+    function handleClick(e) {
+        console.log(user);
+        if (e.target.className === 'container_header_signIn') {
+            return setOpenSignIn(!openSignIn);
+        }
+        return setOpenRegister(!openRegister);
+
+    }
+
     return (
         <>
             <div className='container_header'>
 
                 <div className='container_header_menu'>
-                    <MoreVertIcon />
+                    <img src={Logo} alt="Logo Marca" />
                 </div>
 
-                <div className='container_header_title'>Cardápio Digital</div>
-
+                <a
+                    onClick={handleClick}
+                    style={{ textDecoration: 'none' }}
+                    className='container_header_signIn'>
+                    {!token && 'Acesse sua conta agora!'}
+                </a>
+                <a
+                    onClick={handleClick}
+                    style={{ textDecoration: 'none' }}
+                    className='container_header_signUp'>
+                    {!token && 'Cadastre-se'}
+                </a>
                 <div className='container_header_avatar'>
-                    <CustonMenu />
-                    <strong>Agenor Torres</strong>
+                    {token &&
+                        <>
+                            <CustonMenu />
+                            <strong>{user.nome}</strong>
+                        </>
+                    }
                 </div>
             </div>
             <div className='contente-page'>
