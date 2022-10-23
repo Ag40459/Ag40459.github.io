@@ -4,12 +4,13 @@ import ModalCard from '../../components/ModalCardOrigin';
 import UseUser from '../../hooks/useUser';
 import SignIn from '../../pages/SignIn';
 import Register from '../../pages/SignUP';
+import ModalBadgeCarShopping from '../../components/ModalBadgeCarShopping';
 import './style.css';
 
 export default function Home() {
 
 
-  const { openModalProduct, openSignIn, openRegister, dayOffer } = UseUser()
+  const { openModalProduct, openSignIn, openRegister, dayOffer, openModalCarShopping } = UseUser();
 
   return (
     <div className="container_home">
@@ -22,6 +23,8 @@ export default function Home() {
       {openRegister &&
         <Register />
       }
+      {openModalCarShopping &&
+        <ModalBadgeCarShopping />}
       <div className='container_cards'>
         <strong
           className='container_cards_promotion_strong'>

@@ -1,12 +1,17 @@
 .container_modalCard {
-    position: absolute;
     display: flex;
-    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+.container_modalCard_card {
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
     font-size: 12px;
     z-index: 1;
 }
@@ -23,20 +28,27 @@
 }
 
 .container_modalCard_botton {
+    width: 94%;
     position: absolute;
-    bottom: 1.8rem;
+    bottom: 8rem;
     display: flex;
+    align-items: center;
     background-color: #fff;
-    justify-content: center;
+    justify-content: space-around;
     padding-top: 0.5rem;
-    width: 94.5%;
     border-top: 0.1rem solid rgb(250, 242, 242);
+}
+
+.container_modalCard_botton_rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container_modalCard_botton button {
     display: flex;
     bottom: 4rem;
-    background-color: lightgray;
+    background-color: red;
     padding: 1.5rem;
     border-radius: 0.3rem;
 }

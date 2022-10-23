@@ -22,8 +22,8 @@ export default function CardsCollum() {
                             <p>{product.title}</p>
                         </div>
                         <div className='container_cardsCollum_purchase_price'>
-                            <strong>R$ {((product.value).toFixed(2))}</strong>
-                            <span>R$ {(((product.value) * 0.8).toFixed(2))}</span>
+                            <strong>R$ {(((product.value) * 0.8).toFixed(2))}</strong>
+                            <span>R$ {((product.value).toFixed(2))}</span>
                         </div>
 
                     </div>

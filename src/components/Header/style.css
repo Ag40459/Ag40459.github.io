@@ -7,7 +7,7 @@
     position: absolute;
     background-color: rgb(110, 30, 148);
     height: 5rem;
-    max-width: 100%;
+    max-width: 100vw;
     z-index: 1;
     color: #fff;
 }

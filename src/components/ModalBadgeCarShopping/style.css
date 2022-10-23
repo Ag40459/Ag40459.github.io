@@ -1,0 +1,30 @@
+.container_modalBadge {
+    position: absolute;
+    display: flex;
+    text-align: start;
+    /* top: 0; */
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.container_modalBadge_card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    top: 5rem;
+    right: 1rem;
+    height: 12rem;
+    overflow: scroll;
+    width: 95%;
+    border-radius: 1rem;
+    background-color: #fff;
+    border: 2px solid red;
+}
+
+ul {
+    font-size: 1rem;
+}

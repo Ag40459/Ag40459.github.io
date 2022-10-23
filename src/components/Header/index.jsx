@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Logo from '../../assets/logoNinacai.jpeg';
 import CustonMenu from '../../components/CustonMenu';
 import UseUser from '../../hooks/useUser';
+import BadgeCarShopping from '../../components/BadgeCarShopping';
 import './style.css';
 
 export default function Header() {
@@ -41,6 +42,7 @@ export default function Header() {
                         <>
                             <CustonMenu />
                             <strong>{user.nome}</strong>
+                            <BadgeCarShopping />
                         </>
                     }
                 </div>
