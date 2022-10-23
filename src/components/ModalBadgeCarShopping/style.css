@@ -2,12 +2,10 @@
     position: absolute;
     display: flex;
     text-align: start;
-    /* top: 0; */
     height: 100vh;
     width: 100vw;
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.5);
-
 }
 
 .container_modalBadge_card {
@@ -25,6 +23,32 @@
     border: 2px solid red;
 }
 
+.container_modalBadge_card img {
+    width: 1rem;
+    position: absolute;
+    right: 1rem;
+}
+
 ul {
     font-size: 1rem;
+}
+
+.container_modalBadge_card_list {
+    display: flex;
+}
+
+.container_modalBadge_card button {
+    height: auto;
+    width: auto;
+    position: absolute;
+    font-size: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    justify-content: space-around;
+    padding: 0.5rem;
+    border-radius: 2rem;
+
 }

@@ -42,7 +42,6 @@ export default function SignIn() {
                 senha: pass
             })
             const { token, usuario } = response.data;
-            console.log(usuario);
             setUser(usuario);
             setToken(token);
             setOpenSignIn(!openSignIn);

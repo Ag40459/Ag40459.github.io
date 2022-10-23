@@ -11,16 +11,15 @@ import UseUser from '../../hooks/useUser';
 import './style.css';
 
 export default function ModalCard() {
-    const { openModalProduct, setOpenModalProduct, productSelect, setTopPosition, topPosition, listCarShopping, setListCarShopping, removeListCarShopping } = UseUser()
+    const { openModalProduct, setOpenModalProduct, productSelect, setTopPosition, topPosition, listCarShopping, setListCarShopping, setNumberPurchases } = UseUser()
     useEffect(() => {
         setTopPosition(document.documentElement.scrollTop);
     }, [openModalProduct]);
 
     useEffect(() => {
-        console.log(listCarShopping);
     }, [listCarShopping])
 
-    const handleClickListCarShopping = () => {
+    const handleClickAddListCarShopping = () => {
         if (!listCarShopping) {
             const newList = productSelect;
             setListCarShopping([newList]);
@@ -28,7 +27,8 @@ export default function ModalCard() {
         }
         const list = listCarShopping;
         const newProduct = { ...productSelect };
-        list.push(newProduct);
+        const numberPurchases = list.push(newProduct);
+        setNumberPurchases(numberPurchases);
         setListCarShopping(list);
         return setOpenModalProduct(!openModalProduct);
     };
@@ -86,7 +86,7 @@ export default function ModalCard() {
                             <Rating name="size-large" defaultValue={5} size="large" />
                         </div>
                         <button
-                            onClick={handleClickListCarShopping}
+                            onClick={handleClickAddListCarShopping}
                         >
                             Adicionar R$ {(productSelect.value).toFixed(2)}
                         </button>

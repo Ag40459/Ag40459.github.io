@@ -5,7 +5,8 @@ import listProduct from "../dados";
 
 function useUseProvider() {
     const [token, setToken, removeToken] = useLocalStorage('token', '');
-    const [listCarShopping, setListCarShopping, removeListCarShopping] = useLocalStorage('listCarShopping', [{}]);
+    const [listCarShopping, setListCarShopping, removeListCarShopping] = useLocalStorage('listCarShopping', []);
+    const [numberPurchases, setNumberPurchases, removeNumberPurchases] = useLocalStorage('numberPurchases', 0);
     const [openModalProduct, setOpenModalProduct] = useState(false);
     const [openSignIn, setOpenSignIn] = useState(false);
     const [openRegister, setOpenRegister] = useState(false);
@@ -27,7 +28,7 @@ function useUseProvider() {
     const [imageProduct, setImageProduct] = useState('');
 
     return {
-        token, setToken, removeToken, openModalProduct, setOpenModalProduct, openSignIn, setOpenSignIn, openRegister, dayOffer, setDayOffer, setOpenRegister, openModalCarShopping, setOpenModalCarShopping, listProductModal, setListProductModal, productSelect, setProductSelect, topPosition, setTopPosition, listCategory, setListCategory, listCarShopping, setListCarShopping, removeListCarShopping, category, setCategory, name, setName, email, setEmail, pass, setPass, titleProduct, setTitleProduct, idCategoryProduct, setIdCategoryProduct, priceProduct, setPriceProduct, descriptionProduct, setDescriptionProduct, imageProduct, setImageProduct, user, setUser, Close
+        token, setToken, removeToken, openModalProduct, setOpenModalProduct, openSignIn, setOpenSignIn, openRegister, dayOffer, setDayOffer, setOpenRegister, openModalCarShopping, setOpenModalCarShopping, listProductModal, setListProductModal, productSelect, setProductSelect, topPosition, setTopPosition, listCategory, setListCategory, listCarShopping, setListCarShopping, removeListCarShopping, category, setCategory, name, setName, numberPurchases, setNumberPurchases, removeNumberPurchases, email, setEmail, pass, setPass, titleProduct, setTitleProduct, idCategoryProduct, setIdCategoryProduct, priceProduct, setPriceProduct, descriptionProduct, setDescriptionProduct, imageProduct, setImageProduct, user, setUser, Close
     }
 }
 

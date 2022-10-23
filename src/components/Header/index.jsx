@@ -9,7 +9,6 @@ export default function Header() {
     const { token, openSignIn, setOpenSignIn, openRegister, setOpenRegister, user } = UseUser();
 
     function handleClick(e) {
-        console.log(user);
         if (e.target.className === 'container_header_signIn') {
             return setOpenSignIn(!openSignIn);
         }

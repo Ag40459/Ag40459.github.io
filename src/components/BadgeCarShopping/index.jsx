@@ -17,13 +17,20 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 
 export default function BadgeCarShopping() {
-    const { listCarShopping, openModalCarShopping, setOpenModalCarShopping } = UseUser();
+    const { openModalCarShopping, setOpenModalCarShopping, numberPurchases, setNumberPurchases, listCarShopping } = UseUser();
 
-    let numberPurchases = listCarShopping.length;
-    if (!numberPurchases) {
-        numberPurchases = 0;
-        return
-    }
+    React.useEffect(() => {
+        if (listCarShopping) {
+
+            if (listCarShopping.length == 1) {
+                const number = 1;
+                setNumberPurchases(number);
+            }
+        }
+
+    }, [listCarShopping]);
+
+
     function handleClickOpenModalCarShopping() {
         return setOpenModalCarShopping(!openModalCarShopping)
     }
