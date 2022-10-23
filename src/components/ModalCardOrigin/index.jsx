@@ -30,10 +30,10 @@ const ExpandMore = styled((props) => {
 }));
 
 export default function ModalCard() {
-    const { setOpenModal, openModal, productSelect, setTopPosition, topPosition } = UseUser()
+    const { setOpenModalProduct, openModalProduct, productSelect, setTopPosition, topPosition } = UseUser()
     useEffect(() => {
         setTopPosition(document.documentElement.scrollTop);
-    }, [openModal])
+    }, [openModalProduct])
     const [expanded, setExpanded] = useState(false);
 
     const handleExpandClick = () => {
@@ -56,7 +56,7 @@ export default function ModalCard() {
                 <CardHeader
                     action={
                         <IconButton
-                            onClick={() => setOpenModal(!openModal)}
+                            onClick={() => setOpenModalProduct(!openModalProduct)}
                             aria-label="settings">
                             <img
                                 src={Close}

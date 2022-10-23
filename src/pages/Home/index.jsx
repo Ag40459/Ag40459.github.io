@@ -9,7 +9,7 @@ import './style.css';
 export default function Home() {
 
 
-  const { openModalProduct, openSignIn, openRegister } = UseUser()
+  const { openModalProduct, openSignIn, openRegister, dayOffer } = UseUser()
 
   return (
     <div className="container_home">
@@ -25,7 +25,7 @@ export default function Home() {
       <div className='container_cards'>
         <strong
           className='container_cards_promotion_strong'>
-          Promoções de {'domingo'}:
+          Promoções de {dayOffer}:      {/* INCLUIR CROCK */}
         </strong>
         <div className='container_cards_promotion'>
           <CardsCollum />

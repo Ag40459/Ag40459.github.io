@@ -2,9 +2,9 @@ import UseUser from '../../hooks/useUser';
 import './style.css';
 
 export default function CardsCollum() {
-    const { openModal, setOpenModal, listProductModal, setProductSelect, listProduct } = UseUser()
+    const { openModalProduct, setOpenModalProduct, listProductModal, setProductSelect, listProduct } = UseUser()
     function handleSelectProduct(product) {
-        setOpenModal(!openModal);
+        setOpenModalProduct(!openModalProduct);
         return setProductSelect(product);
     }
     return (

@@ -8,6 +8,7 @@ function useUseProvider() {
     const [openModalProduct, setOpenModalProduct] = useState(false);
     const [openSignIn, setOpenSignIn] = useState(false);
     const [openRegister, setOpenRegister] = useState(false);
+    const [dayOffer, setDayOffer] = useState('Domingo');
     const [listProductModal, setListProductModal] = useState(listProduct);
     const [productSelect, setProductSelect] = useState({});
     const [topPosition, setTopPosition] = useState(0);
@@ -23,12 +24,8 @@ function useUseProvider() {
     const [descriptionProduct, setDescriptionProduct] = useState('');
     const [imageProduct, setImageProduct] = useState('');
 
-    // const [array]
-
-
-
     return {
-        token, setToken, removeToken, openModalProduct, setOpenModalProduct, openSignIn, setOpenSignIn, openRegister, setOpenRegister, listProductModal, setListProductModal, productSelect, setProductSelect, topPosition, setTopPosition, listCategory, setListCategory, category, setCategory, name, setName, email, setEmail, pass, setPass, titleProduct, setTitleProduct, idCategoryProduct, setIdCategoryProduct, priceProduct, setPriceProduct, descriptionProduct, setDescriptionProduct, imageProduct, setImageProduct, user, setUser, Close
+        token, setToken, removeToken, openModalProduct, setOpenModalProduct, openSignIn, setOpenSignIn, openRegister, dayOffer, setDayOffer, setOpenRegister, listProductModal, setListProductModal, productSelect, setProductSelect, topPosition, setTopPosition, listCategory, setListCategory, category, setCategory, name, setName, email, setEmail, pass, setPass, titleProduct, setTitleProduct, idCategoryProduct, setIdCategoryProduct, priceProduct, setPriceProduct, descriptionProduct, setDescriptionProduct, imageProduct, setImageProduct, user, setUser, Close
     }
 }
 

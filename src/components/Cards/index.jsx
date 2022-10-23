@@ -2,9 +2,9 @@ import UseUser from '../../hooks/useUser';
 import './style.css';
 
 export default function Cards() {
-    const { openModal, setOpenModal, listProductModal, setProductSelect } = UseUser()
+    const { openModalProduct, setOpenModalProduct, listProductModal, setProductSelect } = UseUser()
     function handleSelectProduct(product) {
-        setOpenModal(!openModal);
+        setOpenModalProduct(!openModalProduct);
         return setProductSelect(product);
     }
     return (
