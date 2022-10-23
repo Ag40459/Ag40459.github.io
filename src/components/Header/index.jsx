@@ -13,7 +13,6 @@ export default function Header() {
             return setOpenSignIn(!openSignIn);
         }
         return setOpenRegister(!openRegister);
-
     }
 
     return (
@@ -36,6 +35,7 @@ export default function Header() {
                     className='container_header_signUp'>
                     {!token && 'Cadastre-se'}
                 </a>
+                <BadgeCarShopping />
                 <div className='container_header_avatar'>
                     {token &&
                         <>

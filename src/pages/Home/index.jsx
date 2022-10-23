@@ -24,7 +24,8 @@ export default function Home() {
         <Register />
       }
       {openModalCarShopping &&
-        <ModalBadgeCarShopping />}
+        <ModalBadgeCarShopping />
+      }
       <div className='container_cards'>
         <strong
           className='container_cards_promotion_strong'>

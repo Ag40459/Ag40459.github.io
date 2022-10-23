@@ -9,18 +9,17 @@
 }
 
 .container_modalBadge_card {
+    height: 15rem;
+    width: 95%;
     position: absolute;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     top: 5rem;
     right: 1rem;
-    height: 12rem;
-    overflow: scroll;
-    width: 95%;
+    overflow: auto;
     border-radius: 1rem;
     background-color: #fff;
-    border: 2px solid red;
 }
 
 .container_modalBadge_card img {
@@ -35,20 +34,49 @@ ul {
 
 .container_modalBadge_card_list {
     display: flex;
+    justify-content: space-between;
 }
 
-.container_modalBadge_card button {
+.container_modalBadge_card_description {
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+.container_modalBadge_card_list_price {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#totalBadge {
+    position: absolute;
+    right: 0;
+    bottom: -3rem;
+}
+
+.container_modalBadge_card_button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container_modalBadge_card_button button {
     height: auto;
     width: auto;
     position: absolute;
     font-size: 1rem;
-    right: 1rem;
-    bottom: 1rem;
     display: flex;
+    bottom: 0.5rem;
     align-items: center;
-    background-color: red;
-    justify-content: space-around;
+    background-color: greenyellow;
     padding: 0.5rem;
     border-radius: 2rem;
+    cursor: pointer;
+}
 
+.container_modalBadge_card_button button:hover {
+    opacity: 0.7;
+    transition: 1s;
+    background-color: rgb(92, 132, 30);
+
+    transform: scale(1.09);
 }

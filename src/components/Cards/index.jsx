@@ -23,7 +23,7 @@ export default function Cards() {
                         <div className='container_cards_purchase_details'>
                             <h1>{product.title}</h1>
                             <p>{product.description}</p>
-                            <span>R$ {((product.value).toFixed(2))}</span>
+                            <span>R$ {(product.value).toFixed(2).replace('.', ',')}</span>
                         </div>
 
                     </div>

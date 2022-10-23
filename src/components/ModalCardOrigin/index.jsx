@@ -88,7 +88,7 @@ export default function ModalCard() {
                         <button
                             onClick={handleClickAddListCarShopping}
                         >
-                            Adicionar R$ {(productSelect.value).toFixed(2)}
+                            Adicionar R$ {(productSelect.value).toFixed(2).replace('.', ',')}
                         </button>
                     </div>
                 </Card>
