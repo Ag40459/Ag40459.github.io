@@ -10,7 +10,7 @@ import './style.css';
 export default function Home() {
 
 
-  const { openModalProduct, openSignIn, openRegister, dayOffer, openModalCarShopping } = UseUser();
+  const { openModalProduct, openSignIn, openRegister, dayOffer, openModalCarShopping, openModalEditProfile } = UseUser();
 
   return (
     <div className="container_home">
@@ -25,6 +25,9 @@ export default function Home() {
       }
       {openModalCarShopping &&
         <ModalBadgeCarShopping />
+      }
+      {openModalEditProfile &&
+        <Register />
       }
       <div className='container_cards'>
         <strong

@@ -1,3 +1,4 @@
+import Register from '../../pages/SignUP';
 import Logout from '@mui/icons-material/Logout';
 import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
@@ -16,7 +17,7 @@ import './style.css';
 
 
 export default function MenuHeader() {
-    const { removeToken } = UseUser();
+    const { removeToken, setOpenRegister, openRegister, removeNumberPurchases } = UseUser();
     const navigate = useNavigate();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -26,12 +27,24 @@ export default function MenuHeader() {
     const handleClose = () => {
         setAnchorEl(null);
     };
-    const handleExit = () => {
-        return removeToken();
-    }
 
-    const handleClickAddAccount = () => {
-        return navigate('/signUp');
+    const handleClickAddAccount = (e) => {
+        if (e.target.innerHTML == 'Perfil') {
+            return setOpenRegister(!openRegister);
+        }
+        else if (e.target.innerHTML == 'Minha Conta') {
+            return console.log("Minha Conta");
+        }
+        else if (e.target.innerHTML == 'Novo Usuário') {
+            return console.log("Novo Usuário");
+        }
+        else if (e.target.innerHTML == 'Configurações') {
+            return console.log("Configurações");
+        }
+
+        console.log("Sair");
+        removeNumberPurchases()
+        return removeToken();
     }
     return (
         <>
@@ -49,7 +62,7 @@ export default function MenuHeader() {
                     >
                         <img
                             style={{ width: 32 }}
-                            src={profile}
+                            src={profile}       //AQUI ADICIONAR IMAGEM
                             alt="Avatar" /> </Avatar>
 
                 </IconButton>
@@ -90,10 +103,20 @@ export default function MenuHeader() {
                 anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
             >
                 <MenuItem>
-                    <Avatar /> Perfil
+                    <Avatar
+                    />  <span
+                        onClick={(e) => handleClickAddAccount(e)}
+                    >
+                        Perfil
+                    </span>
+
                 </MenuItem>
                 <MenuItem>
-                    <Avatar /> Minha Conta
+                    <Avatar />  <span
+                        onClick={(e) => handleClickAddAccount(e)}
+                    >
+                        Minha Conta
+                    </span>
                 </MenuItem>
                 <Divider />
                 <MenuItem>
@@ -101,7 +124,7 @@ export default function MenuHeader() {
                         <PersonAdd fontSize="small" />
                     </ListItemIcon>
                     <span
-                        onClick={() => handleClickAddAccount()}
+                        onClick={(e) => handleClickAddAccount(e)}
                     >
                         Novo Usuário
                     </span>
@@ -111,18 +134,25 @@ export default function MenuHeader() {
                     <ListItemIcon>
                         <Settings fontSize="small" />
                     </ListItemIcon>
-                    Configurações
+                    <span
+                        onClick={(e) => handleClickAddAccount(e)}
+                    >
+                        Configurações
+                    </span>
                 </MenuItem>
-                <MenuItem
-                    onClick={() => handleExit()}
-                >
+                <MenuItem>
                     <ListItemIcon
                     >
                         <Logout fontSize="small" />
                     </ListItemIcon>
-                    Sair
+                    <span
+                        onClick={(e) => handleClickAddAccount(e)}
+                    >
+                        Sair
+                    </span>
                 </MenuItem>
             </Menu>
+
         </>
     );
 }

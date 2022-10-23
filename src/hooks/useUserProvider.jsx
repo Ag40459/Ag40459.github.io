@@ -8,9 +8,10 @@ function useUseProvider() {
     const [listCarShopping, setListCarShopping, removeListCarShopping] = useLocalStorage('listCarShopping', []);
     const [numberPurchases, setNumberPurchases, removeNumberPurchases] = useLocalStorage('numberPurchases', 0);
     const [openModalProduct, setOpenModalProduct] = useState(false);
+    const [openModalEditProfile, setOpenModalEditProfile] = useState(false);
     const [openSignIn, setOpenSignIn] = useState(false);
-    const [openRegister, setOpenRegister] = useState(false);
     const [openModalCarShopping, setOpenModalCarShopping] = useState(false);
+    const [openRegister, setOpenRegister] = useState(false);
     const [dayOffer, setDayOffer] = useState('Domingo');
     const [topPosition, setTopPosition] = useState(0);
     const [category, setCategory] = useState('');
@@ -28,7 +29,7 @@ function useUseProvider() {
     const [imageProduct, setImageProduct] = useState('');
 
     return {
-        token, setToken, removeToken, openModalProduct, setOpenModalProduct, openSignIn, setOpenSignIn, openRegister, dayOffer, setDayOffer, setOpenRegister, openModalCarShopping, setOpenModalCarShopping, listProductModal, setListProductModal, productSelect, setProductSelect, topPosition, setTopPosition, listCategory, setListCategory, listCarShopping, setListCarShopping, removeListCarShopping, category, setCategory, name, setName, numberPurchases, setNumberPurchases, removeNumberPurchases, email, setEmail, pass, setPass, titleProduct, setTitleProduct, idCategoryProduct, setIdCategoryProduct, priceProduct, setPriceProduct, descriptionProduct, setDescriptionProduct, imageProduct, setImageProduct, user, setUser, Close
+        token, setToken, removeToken, openModalProduct, setOpenModalProduct, openModalEditProfile, setOpenModalEditProfile, openSignIn, setOpenSignIn, openRegister, dayOffer, setDayOffer, setOpenRegister, openModalCarShopping, setOpenModalCarShopping, listProductModal, setListProductModal, productSelect, setProductSelect, topPosition, setTopPosition, listCategory, setListCategory, listCarShopping, setListCarShopping, removeListCarShopping, category, setCategory, name, setName, numberPurchases, setNumberPurchases, removeNumberPurchases, email, setEmail, pass, setPass, titleProduct, setTitleProduct, idCategoryProduct, setIdCategoryProduct, priceProduct, setPriceProduct, descriptionProduct, setDescriptionProduct, imageProduct, setImageProduct, user, setUser, Close
     }
 }
 
