@@ -28,7 +28,7 @@ export default function Header() {
                     onClick={handleClick}
                     style={{ textDecoration: 'none' }}
                     className='container_header_signIn'>
-                    {!token && 'Acesse sua conta agora!'}
+                    {!token && 'Login'}
                 </a>
                 <a
                     onClick={handleClick}

@@ -23,8 +23,11 @@ export default function Home() {
         <Register />
       }
       <div className='container_cards'>
+        <strong
+          className='container_cards_promotion_strong'>
+          Promoções de {'domingo'}:
+        </strong>
         <div className='container_cards_promotion'>
-          <strong className='container_cards_promotion_strong'>Destaques</strong>
           <CardsCollum />
         </div>
         <Cards />
