@@ -125,14 +125,14 @@ export default function RegisterProduct() {
                     >
                         Limpar
                     </Button>
-                    <Button
+                    {/* <Button
                         type='submit'
                         sx={{ width: '40%' }}
                         variant="contained"
                         color="success"
                     >
                         Cadastrar
-                    </Button>
+                    </Button> */}
 
                 </div>
 

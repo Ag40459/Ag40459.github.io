@@ -35,7 +35,7 @@ export default function Header() {
                     className='container_header_signUp'>
                     {!token && 'Cadastre-se'}
                 </a>
-                <BadgeCarShopping />
+                {/* <BadgeCarShopping /> */}
                 <div className='container_header_avatar'>
                     {token &&
                         <>

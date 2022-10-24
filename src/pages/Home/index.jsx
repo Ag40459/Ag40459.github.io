@@ -37,6 +37,7 @@ export default function Home() {
         <div className='container_cards_promotion'>
           <CardsCollum />
         </div>
+        <h1>Teste</h1>
         <Cards />
       </div>
 
