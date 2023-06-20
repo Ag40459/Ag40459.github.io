@@ -28,7 +28,7 @@
   padding: 0;
 }
 .menu-vertical li {
-  font-size: 5rem;
+  font-size: rem;
 }
 .menu li,
 .menu-vertical li {
@@ -120,13 +120,11 @@
     var(--metallic-color),
     var(--neonGreen-color)
   );
-  padding: 2rem;
   border-radius: 8px;
   max-height: 80vh;
   width: 35rem;
-  height: 70rem;
-  top: 9rem;
-  right: 2rem;
+  height: 60rem;
+  right: 0rem;
 
   animation-name: slideDown;
   animation-duration: 0.5s;

@@ -175,7 +175,7 @@ h3 {
 .project-card {
   display: flex;
   flex-direction: column;
-  width: 35rem;
+  width: 30rem;
   height: 28rem;
   align-items: center;
   justify-content: center;
