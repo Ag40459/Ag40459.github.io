@@ -5,6 +5,7 @@ import linkedin from "../../assets/linkedin.svg";
 import mail from "../../assets/mail.svg";
 import instagram from "../../assets/instagram.svg";
 import whatsapp from "../../assets/whatsapp.svg";
+import whatsapp2 from "../../assets/whatsapp2.svg";
 import vector from "../../assets/vector.svg";
 import smartphone from "../../assets/smartphone.svg";
 import figma from "../../assets/figma.svg";
@@ -30,6 +31,7 @@ import "./home.css";
 function Home() {
   const { isDarkTheme } = useContext(ThemeContext);
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [showWhatsAppBalloon, setShowWhatsAppBalloon] = useState(false);
 
   useEffect(() => {
     document.body.style.backgroundColor = isDarkTheme
@@ -45,9 +47,14 @@ function Home() {
       } else {
         topButton.classList.remove("active");
       }
+
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      setShowWhatsAppBalloon(scrollTop > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -311,6 +318,17 @@ function Home() {
       <Link to="top" smooth={true} duration={500} className="top-button">
         Topo
       </Link>
+
+      {showWhatsAppBalloon && (
+        <a
+          href="https://api.whatsapp.com/send?phone=5581985967343"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-balloon"
+        >
+          <img src={whatsapp2} alt="WhatsApp Icon" />
+        </a>
+      )}
     </div>
   );
 }

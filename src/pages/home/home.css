@@ -296,6 +296,11 @@ h3 {
   .contact-icon-text {
     display: none;
   }
+
+  .whatsapp-balloon img {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 
 .top-button {
@@ -312,4 +317,23 @@ h3 {
 
 .top-button.active {
   display: block;
+}
+
+.whatsapp-balloon {
+  position: fixed;
+  top: 10rem;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9rem;
+  height: 9rem;
+  background-color: #25d366;
+  border-radius: 50%;
+}
+
+.whatsapp-balloon img {
+  width: 6rem;
+  height: 6rem;
 }
