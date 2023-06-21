@@ -59,7 +59,7 @@ function Home() {
         <div className="portfolio-content">
           <div className="portfolio-content-presentation">
             <h1 className="highlight-text">
-              Olá, sou o <br /> Agenor Torres :)
+              Olá, sou o <br /> Agenor Torres
             </h1>
             <p>Desenvolvedor Full Stack</p>
             <div className="portfolio-buttons">

@@ -276,7 +276,7 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 43rem) {
+@media only screen and (max-width: 57rem) {
   .portfolio-section {
     display: flex;
     flex-direction: column;
