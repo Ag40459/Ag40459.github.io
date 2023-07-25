@@ -144,7 +144,7 @@ function Home() {
               </div>
             </a>
             <a
-              href="https://api.whatsapp.com/send?phone=5581985967343"
+              href="https://api.whatsapp.com/send?phone=5581985967343&text=Olá%20Agenor"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -321,7 +321,7 @@ function Home() {
 
       {showWhatsAppBalloon && (
         <a
-          href="https://api.whatsapp.com/send?phone=5581985967343"
+          href="https://api.whatsapp.com/send?phone=5581985967343&text=Olá%20Agenor"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-balloon"
