@@ -95,7 +95,7 @@ function Home() {
         <p style={{ textAlign: "justify" }}>
           "Oi, sou o Agenor Torres, um desenvolvedor apaixonado por tecnologia e
           soluções criativas. Tenho experiência em JavaScript, NodeJS, HTML, CSS, Query SQL, MYSQL, GIT,
-ReactJS, API REST, Postegres, Beekeeper, Insomnia,
+ReactJS, API REST, Postgres, Beekeeper, Insomnia,
 SoapUI, Postman, Selenium, Jest, Figma, Python,
 RabbitMQ, Ruby on Rails; <br />
           <br />
