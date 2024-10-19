@@ -4,10 +4,6 @@
     text-align: center;
 }
 
-h1 {
-    font-size: 3rem;
-}
-
 h2 {
     color: #1DA1F2;
 }
@@ -23,6 +19,7 @@ h2 {
     align-items: center;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    min-width: 300px;
 }
 
 .product-card:hover {
@@ -30,8 +27,8 @@ h2 {
 }
 
 .product-card img {
-    width: 100%;
-    height: auto;
+    width: 10px;
+    height: 250px;
     border-radius: 10px;
 }
 
