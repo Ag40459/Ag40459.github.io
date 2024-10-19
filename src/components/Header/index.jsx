@@ -8,7 +8,7 @@ function Header() {
             <div className='ContainerHeader'>
                 <h1>GESTÃO DE IFOOD</h1>
                 <h2>UMA PRESTAÇÃO DE SERVIÇO</h2>
-                <h3>GARANTIA DE RESULTADO</h3>
+                <h3>COM GARANTIA DE RESULTADO</h3>
                 <a href="https://wa.me/+5581997420369"
                     className="whatsapp-button"
                     target="_blank"
