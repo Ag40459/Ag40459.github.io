@@ -3,9 +3,7 @@ header {
     height: 25rem;
     width: 100%;
     background-color: #1DA1F2;
-    /* Cor azul metálico */
     background: linear-gradient(to right, #1DA1F2, #000000);
-    /* Azul metálico puxando para preto nas laterais */
     align-items: center;
     justify-content: center;
     gap: 10rem;
@@ -31,11 +29,9 @@ h3 {
 
 .whatsapp-button {
     background-color: rgba(255, 0, 0, 0.7);
-    /* Vermelho transparente */
     border: none;
     color: white;
     padding: 1rem 1rem;
-    /* Aumentar altura em 20% e largura em 40% */
     text-align: center;
     text-decoration: none;
     display: inline-block;

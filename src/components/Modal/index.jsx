@@ -1,13 +1,18 @@
+import React from 'react';
 import './style.css';
 
-function Modal() {
-
+function Modal({ product }) {
     return (
-        <div>
-            Modal
+        <div className="product-card">
+            {product && (
+                <>
+                    <img src={product.image} alt={product.title} />
+                    <h3>{product.title}</h3>
+                    <p>{product.description}</p>
+                </>
+            )}
         </div>
-
-    )
+    );
 }
 
 export default Modal;

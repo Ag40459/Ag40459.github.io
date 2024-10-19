@@ -1,0 +1,34 @@
+.products {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+h2 {
+    color: #1DA1F2;
+}
+
+.product-card {
+    text-align: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    color: #1DA1F2;
+}
+
+.product-card p {
+    color: #333;
+}
