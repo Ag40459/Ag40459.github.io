@@ -3,6 +3,8 @@ import Footer from '../../components/Footer/index';
 import Header from '../../components/Header/index';
 import Modal from '../../components/Modal/index';
 import Product from '../../components/Product/index';
+import WeOffer from '../../components/WeOffer/index';
+
 
 function Main() {
 
@@ -12,6 +14,7 @@ function Main() {
                 <Header />
                 <div>
                     <Product />
+                    <WeOffer />
                 </div>
                 <Footer />
                 <Modal />
