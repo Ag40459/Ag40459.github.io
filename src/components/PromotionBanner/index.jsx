@@ -12,7 +12,7 @@ function PromotionBanner() {
                 </ul>
             </div>
             <div className="right-section">
-                <h2>📈GESTÃO DE IFOOD COMPLETA</h2>
+                <h2>📈GESTÃO COMPLETA DO SEU IFOOD</h2>
                 <ul>
                     <li>👁️‍🗨️ Monitoramento constante do iFood</li>
                     <li>🛠️ Gestão detalhada do cardápio e dos itens</li>

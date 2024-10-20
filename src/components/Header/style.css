@@ -7,6 +7,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 12rem;
+    margin-bottom: 3rem;
 }
 
 img {
@@ -15,24 +16,34 @@ img {
 
 .ContainerHeader {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
+    /* border: 5px solid red; */
+}
+
+.ContainerHeaderText {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 h1 {
-    color: white;
+    color: #FF3F34;
     font-family: 'Roboto', sans-serif;
-    font-size: 45px;
+    font-size: 70px;
     margin: 0.5rem 0;
-    /* Ajustar o espaçamento */
+    text-shadow: 0 1px 3px rgba(136, 135, 146, 0.884);
 }
+
 
 h2 {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
     margin: 0.5rem 0;
-    /* Ajustar o espaçamento */
 }
 
 h3 {
@@ -40,25 +51,9 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     margin: 0.5rem 0;
-    /* Ajustar o espaçamento */
 }
 
-.whatsapp-button {
-    background-color: rgba(255, 0, 0, 0.7);
-    border: none;
-    color: white;
-    padding: 20px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0.5rem 0;
-    /* Ajustar o espaçamento */
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: pulse 1.5s infinite;
-}
+
 
 
 @keyframes pulse {
@@ -80,30 +75,61 @@ h3 {
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        /* Ajusta altura no modo responsivo */
-        padding: 1rem;
-        /* Adiciona padding no modo responsivo */
-    }
 
-    header img {
-        width: 65%;
-        border-radius: 0 10px 10 px;
-        /* Reduzir tamanho da imagem em 35% */
+    header {
+        height: auto;
+        width: auto;
     }
 
     .ContainerHeader {
-        width: 90%;
-        text-align: center;
-        margin-top: 1rem;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+
     }
 
+    .ContainerHeader img {
+        width: 75%;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .ContainerHeaderText {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        /* border: 1px solid red; */
+    }
+
+    h1 {
+        color: #FF3F34;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        margin: 0.5rem 0;
+        text-shadow: 0 1px 3px rgba(136, 135, 146, 0.884);
+    }
+
+
+    h2 {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 205x;
+        margin: 0.5rem 0;
+    }
+
+    h3 {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        margin: 0.5rem 0;
+    }
+
+
     .whatsapp-button {
-        width: 50%;
-        padding: 20px 0;
+        display: none;
+        width: 85%;
         font-size: 26px;
     }
 }

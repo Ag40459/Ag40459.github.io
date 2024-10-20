@@ -5,12 +5,16 @@
     overflow-x: hidden;
 }
 
-.products-title {
+.productsTitle {
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
+.productsTitle,
+whatsapp-button {
+    margin-top: -2rem;
+}
 
 h2 {
     color: #1DA1F2;
