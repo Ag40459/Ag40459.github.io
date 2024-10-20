@@ -3,7 +3,7 @@ import Carrossel from '../Carousel';
 import './style.css';
 
 const loadProducts = async () => {
-    const response = await fetch('/src/components/Product/database.json');
+    const response = await fetch('/src/components/WeOffer/database.json');
     const data = await response.json();
     return data;
 };
@@ -18,7 +18,7 @@ function WeOffer() {
 
     return (
         <section className="products">
-            <h2 style={{ color: "red" }}>TUDO QUE ENTREGAMOS NA GESTÃO DO IFOOD</h2>
+            <h2 >TUDO QUE ENTREGAMOS NA GESTÃO DO IFOOD</h2>
             <Carrossel products={products} />
         </section>
     );

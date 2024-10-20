@@ -3,7 +3,7 @@ import Carrossel from '../Carousel';
 import './style.css';
 
 const loadProducts = async () => {
-    const response = await fetch('/src/components/Product/database.json');
+    const response = await fetch('/src/components/BeforeAndAfter/database.json');
     const data = await response.json();
     return data;
 };
@@ -18,7 +18,7 @@ function BeforeAndAfter() {
 
     return (
         <section className="products">
-            <h2 style={{ color: "red" }}>ALGUNS DOS NOSSOS RESULTADOS</h2>
+            <h2>ALGUNS DOS NOSSOS RESULTADOS</h2>
             <Carrossel products={products} />
         </section>
     );

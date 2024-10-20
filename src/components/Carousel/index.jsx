@@ -24,8 +24,8 @@ function Carrossel({ products }) {
                 {products && products.map((product, index) => (
                     <div key={index} className="product-card"
                         onClick={() => setSelectedProduct(product)}>
-                        <h4>{product.title}</h4>
-                        {/* <img src={product.image} alt={product.title} /> */}
+                        <h2 style={{ color: "red" }}>{product.title}</h2>
+                        <img src={product.image} alt={product.title} />
                         <h6>{product.resumeDescription}</h6>
 
                     </div>

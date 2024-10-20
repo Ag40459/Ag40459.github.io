@@ -6,10 +6,6 @@
     /* Para ocultar overflow horizontal */
 }
 
-h2 {
-    color: #1DA1F2;
-}
-
 .product-card {
     text-align: center;
     padding: 10px;
@@ -56,21 +52,4 @@ h2 {
     .product-card img {
         width: 60%;
     }
-}
-
-.carousel .carousel-slider .slide {
-    margin-bottom: 4rem;
-}
-
-.carousel .control-dots .dot {
-    background-color: #b60303;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-}
-
-.carousel .control-dots .dot.selected {
-    background-color: #46fa55;
-    width: 18px;
-    height: 18px;
 }
