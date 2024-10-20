@@ -25,7 +25,7 @@ function Products() {
                     className="whatsapp-button"
                     target="_blank"
                     rel="noopener noreferrer">
-                    EU QUERO
+                    PEÇA AQUI
                 </a>
             </div>
             <Carrossel products={products} />

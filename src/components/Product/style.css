@@ -8,12 +8,26 @@
 .productsTitle {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
+    margin-bottom: 1rem;
 }
 
-.productsTitle,
-whatsapp-button {
-    margin-top: -2rem;
+.productsTitle .whatsapp-button {
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1rem 0;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: pulse 1.5s infinite;
+    margin-left: 5%;
+    width: 200px;
 }
 
 h2 {
@@ -37,7 +51,6 @@ h2 {
     margin-bottom: 3rem;
     gap: 2rem;
     height: 80%;
-    /* display: none; */
 }
 
 .product-card:hover {
@@ -69,19 +82,4 @@ h2 {
     }
 }
 
-.carousel .carousel-slider .slide {
-    margin-bottom: 4rem;
-}
-
-.carousel .control-dots .dot {
-    background-color: #b60303;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-}
-
-.carousel .control-dots .dot.selected {
-    background-color: #46fa55;
-    width: 18px;
-    height: 18px;
-}
+/* border: 10px solid red; */
