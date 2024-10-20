@@ -43,9 +43,7 @@ h2 {
 .product-card h3,
 .product-card p {
     width: 90%;
-    /* Garantir que o texto não ultrapasse o card */
     word-wrap: break-word;
-    /* Quebrar palavras longas */
 }
 
 @media screen and (max-width: 768px) {

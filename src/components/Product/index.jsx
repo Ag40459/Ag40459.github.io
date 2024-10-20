@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Carrossel from './Carrosel';
+import Carrossel from '../Carousel';
 import './style.css';
 
 
@@ -7,41 +7,40 @@ function Products() {
 
     const [products] = useState([
         {
-            title: "Super Restaurante",
+            title: "ALAVANCAGEM DE VENDAS",
             image: "https://th.bing.com/th/id/OIG4.RYl2JWwUGNyY36Er21IK?w=1024&h=1024&rs=1&pid=ImgDetMain",
-            resumeDescription: "Orientação Completa para Impulsionar Seu Restaurante no IFood",
+            resumeDescription: "ORIENTAÇÃO COMPLETA PARA IMPULSIONAR SEU RESTAURANTE NO IFOOD",
             description: "Com nossa experiência, você receberá orientação e acompanhamento passo a passo para posicionar seu restaurante no iFood e garantir resultados excepcionais!"
         },
         {
-            title: "Garantia de Resultado: Crescimento Rápido e Consistente",
+            title: "ANALISE POR R$ 49,90 *PROMOÇÃO",
             image: "https://th.bing.com/th/id/OIG4.cTzMcsEs2sWoi4wjS4y9?pid=ImgGn",
-            resumeDescription: "Crescimento Mínimo 25% ou Seu Dinheiro de Volta",
+            resumeDescription: "CRESCIMENTO MÍNIMO DE 25% OU SEU DINHEIRO DE VOLTA",
             description: "Aumente suas vendas em pelo menos 25% nos primeiros três meses ou devolvemos seu dinheiro. Nossa abordagem garante crescimento rápido e seguro."
         },
         {
-            title: "Método Comprovado: Resultados Garantidos",
-            image: "https://th.bing.com/th/id/OIG4.M23.KcT75BeI7YCml_K_?pid=ImgGn",
-            resumeDescription: "Mais de 02 Anos Gerando Resultados.",
-            description: "Com mais de 99.5% de sucesso nas lojas gerenciadas pela nossa equipe, garantimos que seu restaurante também terá resultados positivos com nossa metodologia validada."
+            title: "IMPLANTAÇÃO DE LOJA",
+            image: "https://th.bing.com/th/id/OIG4.cTzMcsEs2sWoi4wjS4y9?pid=ImgGn",
+            resumeDescription: "VOCÊ SÓ VAI PRECISAR, ACEITAR OS PEDIDOS E ENTREGAR UMA BOA EXPERIENCIA PARA O CLIENTE FINAL!",
+            description: "Aumente suas vendas em pelo menos 25% nos primeiros três meses ou devolvemos seu dinheiro. Nossa abordagem garante crescimento rápido e seguro."
         },
-        {
-            title: "Gestão Estratégica: Aumente Suas Vendas",
-            image: "https://th.bing.com/th/id/OIG4.M23.KcT75BeI7YCml_K_?pid=ImgGn",
-            resumeDescription: "Serviço especializado em gestão de vendas no iFood",
-            description: "Nosso serviço de gestão para iFood é focado em maximizar suas vendas com estratégias testadas e otimizadas para aumentar suas margens de lucro e a visibilidade da sua marca."
-        },
-        {
-            title: "Venda Mais: Cresça com Estratégia",
-            image: "https://th.bing.com/th/id/OIG4.M23.KcT75BeI7YCml_K_?pid=ImgGn",
-            resumeDescription: "Crescimento de no mínimo 25% Garantido ",
-            description: "Impulsionamos suas vendas em pelo menos 25% nos primeiros três meses, usando estratégias comprovadas que garantem resultados rápidos e sustentáveis."
-        }
+
     ]);
 
 
     return (
         <section className="products">
-            <h2>Nossos Serviços</h2>
+            <div className="products-title">
+                <h2>Serviços Mais Procurados</h2>
+                <a
+                    href="https://wa.me/+5581997420369"
+                    className="whatsapp-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    QUERO CONTRATAR
+                </a>
+            </div>
+
             <Carrossel products={products} />
         </section>
     );

@@ -1,16 +1,12 @@
 .products {
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
     background-color: #f9f9f9;
     text-align: center;
     overflow-x: hidden;
+    /* Para ocultar overflow horizontal */
 }
-
-.products-title {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
 
 h2 {
     color: #1DA1F2;
@@ -18,8 +14,8 @@ h2 {
 
 .product-card {
     text-align: center;
-    padding: 10px;
-    background: rgb(245, 242, 242);
+    padding: 2rem;
+    background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -27,25 +23,28 @@ h2 {
     align-items: center;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
-    min-width: 150px;
-    max-width: 100%;
+    min-width: 250px;
+    max-width: 80%;
     margin: 0 auto;
-    margin-bottom: 3rem;
-    gap: 2rem;
-    height: 80%;
-    /* display: none; */
+    margin-bottom: 2rem;
+    height: auto;
+    display: none;
 }
 
-.product-card:hover {
 
+.product-card:hover {
     transform: scale(1.05);
 }
 
 .product-card img {
-    width: 80%;
-    height: 65%;
+    width: 50%;
+    /* Diminuir largura da imagem */
+    height: auto;
     border-radius: 10px;
+    object-fit: contain;
+    /* Certificar que a imagem se ajuste dentro do card */
 }
+
 
 .product-card h3,
 .product-card p {
@@ -56,28 +55,34 @@ h2 {
 @media screen and (max-width: 768px) {
     .product-card {
         width: 100%;
-        display: none;
     }
 
     .product-card img {
         width: 60%;
-
     }
 }
 
 .carousel .carousel-slider .slide {
     margin-bottom: 4rem;
+    /* Aumentar distância dos cards para as bolas de posição */
 }
 
 .carousel .control-dots .dot {
-    background-color: #b60303;
+    background-color: #1DA1F2;
+    /* Cor azul metálico */
     width: 15px;
+    /* Largura da bola */
     height: 15px;
+    /* Altura da bola */
     border-radius: 50%;
+    /* Manter a forma redonda */
 }
 
 .carousel .control-dots .dot.selected {
-    background-color: #46fa55;
+    background-color: #FF0000;
+    /* Cor vermelha para a bola selecionada */
     width: 18px;
+    /* Largura da bola selecionada */
     height: 18px;
+    /* Altura da bola selecionada */
 }

@@ -8,21 +8,20 @@ function PromotionBanner() {
             <div className="left-section">
                 <img src={PlaceholderImage} alt="Placeholder" />
                 <ul>
-                    <li>+ De 850 Clientes Atendidos em todo o Brasil</li>
-                    <li>+ De 4 Milhões Enviados para nossos clientes em 1 ano</li>
-                    <li>Garantia de Resultado ou seu dinheiro de volta</li>
+                    <li>GRANTIA DE RESULTADO OU SEU DINHEIRO DE VOLTA 💰</li>
                 </ul>
             </div>
             <div className="right-section">
-                <h2>GESTÃO DE IFOOD COMPLETA</h2>
+                <h2>📈GESTÃO DE IFOOD COMPLETA</h2>
                 <ul>
-                    <li>Monitoramento do ifood</li>
-                    <li>Gestão do cardápio e das ordens dos itens</li>
-                    <li>Movimentação do feed do ifood</li>
-                    <li>Suporte para tirar dúvidas do cliente</li>
-                    <li>Criação de promoções exclusivas preservando o lucro</li>
-                    <li>Relatório mensal</li>
-                    <li>Feedback semanal</li>
+                    <li>👁️‍🗨️ Monitoramento constante do iFood</li>
+                    <li>🛠️ Gestão detalhada do cardápio e dos itens</li>
+                    <li>🔄 Atualizações frequentes no feed do iFood</li>
+                    <li>💬 Suporte sempre pronto para tirar dúvidas dos clientes</li>
+                    <li>💡 Promoções exclusivas que maximizam o lucro sem dor de cabeça</li>
+                    <li>📊 Relatório mensal com tudo o que você precisa saber</li>
+                    <li>🔔 Feedback semanal para ajustar a estratégia e melhorar ainda mais</li>
+
                 </ul>
                 <button className="promotion-button">QUERO VENDER MAIS NO IFOOD</button>
             </div>

@@ -1,0 +1,16 @@
+.carousel .carousel-slider .slide {
+    margin-bottom: 4rem;
+}
+
+.carousel .control-dots .dot {
+    background-color: #b60303;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.carousel .control-dots .dot.selected {
+    background-color: #46fa55;
+    width: 18px;
+    height: 18px;
+}

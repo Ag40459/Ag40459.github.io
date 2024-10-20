@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './style.css';
-import Modal from '../Modal';
+import Modal from '../Modal/index';
 
 function Carrossel({ products }) {
     const [isHovered, setIsHovered] = useState(false);
@@ -24,15 +24,10 @@ function Carrossel({ products }) {
                 {products && products.map((product, index) => (
                     <div key={index} className="product-card"
                         onClick={() => setSelectedProduct(product)}>
-                        <h4>{product.resumeDescription}</h4>
-                        <img src={product.image} alt={product.title} />
-                        <a
-                            href="https://wa.me/+5581997420369"
-                            className="whatsapp-button"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            AUMENTE SUAS VENDAS!!
-                        </a>
+                        <h4>{product.title}</h4>
+                        {/* <img src={product.image} alt={product.title} /> */}
+                        <h6>{product.resumeDescription}</h6>
+
                     </div>
                 ))}
             </Carousel>
