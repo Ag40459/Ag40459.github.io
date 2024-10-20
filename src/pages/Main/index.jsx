@@ -4,6 +4,8 @@ import Header from '../../components/Header/index';
 import Modal from '../../components/Modal/index';
 import Product from '../../components/Product/index';
 import WeOffer from '../../components/WeOffer/index';
+import BeforeAndAfter from '../../components/BeforeAndAfter/index';
+import PromotionBanner from '../../components/PromotionBanner/index';
 
 
 function Main() {
@@ -15,6 +17,8 @@ function Main() {
                 <div>
                     <Product />
                     <WeOffer />
+                    <BeforeAndAfter />
+                    <PromotionBanner />
                 </div>
                 <Footer />
                 <Modal />

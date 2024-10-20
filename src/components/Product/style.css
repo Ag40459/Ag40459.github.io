@@ -12,8 +12,8 @@ h2 {
 
 .product-card {
     text-align: center;
-    padding: 10px;
-    background: rgb(245, 242, 242);
+    padding: 2rem;
+    background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -21,43 +21,42 @@ h2 {
     align-items: center;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
-    min-width: 150px;
-    max-width: 100%;
+    min-width: 250px;
+    max-width: 80%;
     margin: 0 auto;
-    margin-bottom: 3rem;
-    gap: 2rem;
-    height: 80%;
-    /* display: none; */
+    margin-bottom: 2rem;
+    height: auto;
+    display: none;
 }
+
 
 .product-card:hover {
     transform: scale(1.05);
 }
 
 .product-card img {
-    width: 80%;
-    height: 65%;
+    width: 50%;
+    /* Diminuir largura da imagem */
+    height: auto;
     border-radius: 10px;
+    object-fit: contain;
+    /* Certificar que a imagem se ajuste dentro do card */
 }
+
 
 .product-card h3,
 .product-card p {
     width: 90%;
-    /* Garantir que o texto não ultrapasse o card */
     word-wrap: break-word;
-    /* Quebrar palavras longas */
 }
 
-/* Responsividade */
 @media screen and (max-width: 768px) {
     .product-card {
         width: 100%;
-        /* Garantir que o card ocupe 100% da largura do container */
     }
 
     .product-card img {
         width: 60%;
-        /* Diminuir mais a largura no modo responsivo */
     }
 }
 

@@ -24,8 +24,8 @@ function Carrossel({ products }) {
                 {products && products.map((product, index) => (
                     <div key={index} className="product-card"
                         onClick={() => setSelectedProduct(product)}>
+                        <h4>{product.resumeDescription}</h4>
                         <img src={product.image} alt={product.title} />
-                        <p>{product.resumeDescription}</p>
                     </div>
                 ))}
             </Carousel>

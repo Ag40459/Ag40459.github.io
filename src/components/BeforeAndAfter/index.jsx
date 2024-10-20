@@ -3,7 +3,7 @@ import Carrossel from './Carrosel';
 import './style.css';
 
 
-function WeOffer() {
+function BeforeAndAfter() {
 
     const [products] = useState([
         {
@@ -84,10 +84,10 @@ function WeOffer() {
 
     return (
         <section className="products">
-            <h2 style={{ color: "red" }}>TUDO QUE ENTREGAMOS NA GESTÃO DO IFOOD</h2>
+            <h2 style={{ color: "red" }}>ALGUNS DOS NOSSOS RESULTADOS</h2>
             <Carrossel products={products} />
         </section>
     );
 }
 
-export default WeOffer;
+export default BeforeAndAfter;
