@@ -14,7 +14,6 @@
     margin: 0 auto;
     margin-bottom: 2rem;
     height: auto;
-    /* border: 10px solid red; */
 }
 
 .product-card img {
@@ -108,8 +107,10 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25rem;
-    margin: 10px;
+    height: auto;
+    width: 33.33%;
+    /* Ajusta para exibir 3 cards de uma vez */
+    margin: 0;
 }
 
 
@@ -132,6 +133,12 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+
+    .product-card {
+        width: 100%;
+
+    }
+
     .productsTitle h2 {
         display: none;
     }
@@ -144,6 +151,6 @@ h2 {
     .product-card h2 {
         width: 100%;
         font-size: 10px;
-        /* display: none; */
     }
+
 }

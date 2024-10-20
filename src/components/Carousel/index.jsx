@@ -16,8 +16,8 @@ function Carrossel({ products }) {
                 autoPlay={!isHovered}
                 interval={3000}
                 infiniteLoop
-                centerMode
                 centerSlidePercentage={33.33}
+                enterMode={window.innerWidth > 768}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
