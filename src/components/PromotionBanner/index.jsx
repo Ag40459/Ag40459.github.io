@@ -23,13 +23,13 @@ function PromotionBanner() {
                     <li>🔔 Feedback semanal para ajustar a estratégia e melhorar ainda mais</li>
 
                 </ul>
-                <a
+                {/* <a
                     href="https://wa.me/+5581997420369"
                     className="promotion-button"
                     target="_blank"
                     rel="noopener noreferrer">
                     QUERO VENDER MAIS NO IFOOD
-                </a>
+                </a> */}
             </div>
         </div>
     );

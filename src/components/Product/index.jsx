@@ -19,14 +19,7 @@ function Products() {
     return (
         <section className="products">
             <div className="productsTitle">
-                <h2>MAIS PROCURADOS</h2>
-                {/* <a
-                    href="https://wa.me/+5581997420369"
-                    className="whatsapp-button"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    PEÇA AQUI
-                </a> */}
+                <h2>DEPOIMENTOS</h2>
             </div>
             <Carrossel products={products} />
         </section>

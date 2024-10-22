@@ -7,8 +7,7 @@ html {
     background-color: #1DA1F2;
     background: linear-gradient(to right, #1DA1F2, #000000);
     overflow-x: hidden;
-    /* Para evitar o overflow horizontal */
-}
+    } */
 
 */ .Main {
     width: 100%;

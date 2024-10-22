@@ -20,13 +20,13 @@ function WeOffer() {
         <section className="productsWeOffer">
             <div className="productsTitle">
                 <h2>MAIS WEOFFER</h2>
-                <a
+                {/* <a
                     href="https://wa.me/+5581997420369"
                     className="whatsapp-button"
                     target="_blank"
                     rel="noopener noreferrer">
                     QUERO VENDER MAIS
-                </a>
+                </a> */}
             </div>
             <Carrossel products={products} />
         </section>

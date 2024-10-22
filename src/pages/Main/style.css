@@ -1,0 +1,90 @@
+.chat-button {
+    position: fixed;
+    bottom: 80px;
+    /* Mais para cima */
+    right: 30px;
+    /* Mais para a esquerda */
+    z-index: 1000;
+    background-color: #25D366;
+    /* Cor verde similar ao WhatsApp */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.chat-button::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 25px;
+    /* Ajustar para alinhar a ponta com o balão */
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #25D366;
+    /* Cor da ponta */
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -5px;
+    margin-bottom: -5px;
+}
+
+.chat-icon {
+    width: 50px;
+    /* Tamanho do ícone */
+    height: 50px;
+    background-image: url('URL_DA_IMAGEM');
+    /* URL da imagem do ícone */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.chat-button:hover {
+    transform: scale(1.1);
+}
+
+.chat-window {
+    position: fixed;
+    bottom: 130px;
+    right: 30px;
+    width: 300px;
+    max-height: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1000;
+    display: none;
+}
+
+.chat-window.active {
+    display: block;
+}
+
+.chat-messages {
+    padding: 10px;
+    overflow-y: auto;
+    height: 300px;
+}
+
+.chat-window form {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.chat-window input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+}
+
+.chat-window button {
+    padding: 10px;
+    background: #25D366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

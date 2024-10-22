@@ -9,7 +9,7 @@ function Modal({ product, onClose }) {
                 <img src={product.image} alt={product.title} />
                 <h3>{product.title}</h3>
                 <p>{product.description}</p>
-                <a href="https://wa.me/YOUR_PHONE_NUMBER" className="whatsapp-button" target="_blank" rel="noopener noreferrer">Entre em Contato</a>
+                {/* <a href="https://wa.me/YOUR_PHONE_NUMBER" className="whatsapp-button" target="_blank" rel="noopener noreferrer">Entre em Contato</a> */}
                 <button className="close-button" onClick={onClose}>Fechar</button>
             </div>
         </div>
