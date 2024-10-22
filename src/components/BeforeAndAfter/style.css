@@ -1,9 +1,7 @@
 .products {
     padding: 2rem;
-    background-color: #f9f9f9;
     text-align: center;
     overflow-x: hidden;
-    /* Para ocultar overflow horizontal */
 }
 
 .product-card {
@@ -23,7 +21,6 @@
     margin-bottom: 3rem;
     gap: 2rem;
     height: 80%;
-    /* display: none; */
 }
 
 .product-card:hover {
@@ -39,9 +36,7 @@
 .product-card h3,
 .product-card p {
     width: 90%;
-    /* Garantir que o texto não ultrapasse o card */
     word-wrap: break-word;
-    /* Quebrar palavras longas */
 }
 
 @media screen and (max-width: 768px) {

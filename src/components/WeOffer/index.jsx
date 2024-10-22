@@ -17,8 +17,17 @@ function WeOffer() {
     }, []);
 
     return (
-        <section className="products">
-            <h2 >TUDO QUE ENTREGAMOS NA GESTÃO DO IFOOD</h2>
+        <section className="productsWeOffer">
+            <div className="productsTitle">
+                <h2>MAIS WEOFFER</h2>
+                <a
+                    href="https://wa.me/+5581997420369"
+                    className="whatsapp-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    QUERO VENDER MAIS
+                </a>
+            </div>
             <Carrossel products={products} />
         </section>
     );

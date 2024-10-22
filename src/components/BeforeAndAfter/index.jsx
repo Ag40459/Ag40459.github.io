@@ -18,7 +18,7 @@ function BeforeAndAfter() {
 
     return (
         <section className="products">
-            <h2>ALGUNS DOS NOSSOS RESULTADOS</h2>
+            <h2>NOSSOS RESULTADOS</h2>
             <Carrossel products={products} />
         </section>
     );

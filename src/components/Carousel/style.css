@@ -1,156 +1,234 @@
-.product-card {
-    text-align: center;
-    padding: 1rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    .product-card {
+        text-align: center;
+        padding: 10px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        gap: 2rem;
+    }
+
+    .product-card img {
+        width: 80%;
+        height: 65%;
+        border-radius: 10px;
+    }
+
+    .product-card h3,
+    .product-card p {
+        width: 90%;
+        word-wrap: break-word;
+        /* Quebra de texto */
+        text-overflow: ellipsis;
+        /* Indica que o texto foi cortado */
+        overflow: hidden;
+        /* Esconde o excesso de texto */
+    }
+
+    .carousel .carousel-slider {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 33.33%;
+        /* Ajusta para exibir 3 cards de uma vez */
+        margin: 0;
+    }
+
+    .carousel .carousel-slider .slide {
+        margin-bottom: 4rem;
+    }
+
+    .carousel .control-dots .dot {
+        background-color: #b60303;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+
+    .carousel .control-dots .dot.selected {
+        background-color: #46fa55;
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Responsividade */
+    @media screen and (max-width: 768px) {
+        .product-card {
+            width: 100%;
+            height: auto;
+            /* Ajustar a altura no modo responsivo */
+        }
+
+        .productsTitle h2 {
+            display: none;
+        }
+
+        .product-card img {
+            width: 100%;
+        }
+
+        .product-card h2 {
+            width: 100%;
+            font-size: 10px;
+        }
+    }
+
     min-width: 250px;
     max-width: 80%;
     margin: 0 auto;
     margin-bottom: 2rem;
     height: auto;
-}
-
-.product-card img {
-    max-width: 100px;
-    max-height: 100px;
-    width: auto;
-    height: auto;
-    border-radius: 10px;
-}
-
-.products {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
-    overflow-x: hidden;
-}
-
-.productsTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
-}
-
-.productsTitle .whatsapp-button {
-    background-color: rgba(255, 0, 0, 0.7);
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 1rem 0;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: pulse 1.5s infinite;
-    margin-left: 5%;
-    width: 200px;
-}
-
-h2 {
-    color: #1DA1F2;
-}
-
-.product-card {
-    text-align: center;
-    padding: 10px;
-    background: rgb(245, 242, 242);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-    min-width: 150px;
-    max-width: 100%;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    gap: 2rem;
-    height: 80%;
-}
-
-.product-card:hover {
-
-    transform: scale(1.05);
-}
-
-.product-card img {
-    width: 80%;
-    height: 65%;
-    border-radius: 10px;
-}
-
-.product-card h3,
-.product-card p {
-    width: 90%;
-    word-wrap: break-word;
-}
-
-.carousel .carousel-slider {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel .slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 33.33%;
-    /* Ajusta para exibir 3 cards de uma vez */
-    margin: 0;
-}
-
-
-.carousel .carousel-slider .slide {
-    margin-bottom: 4rem;
-
-}
-
-.carousel .control-dots .dot {
-    background-color: #b60303;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-}
-
-.carousel .control-dots .dot.selected {
-    background-color: #46fa55;
-    width: 18px;
-    height: 18px;
-}
-
-@media screen and (max-width: 768px) {
-
-    .product-card {
-        width: 100%;
-
-    }
-
-    .productsTitle h2 {
-        display: none;
     }
 
     .product-card img {
-        width: 100%;
-        /* display: none; */
+        max-width: 100px;
+        max-height: 100px;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
     }
 
-    .product-card h2 {
-        width: 100%;
-        font-size: 10px;
+    .products {
+        padding: 2rem;
+        text-align: center;
+        overflow-x: hidden;
     }
 
-}
+    .productsTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .productsTitle .whatsapp-button {
+        background-color: rgba(255, 0, 0, 0.7);
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 1rem 0;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        animation: pulse 1.5s infinite;
+        margin-left: 5%;
+        width: 200px;
+    }
+
+    h2 {
+        color: #1DA1F2;
+    }
+
+    .product-card {
+        text-align: center;
+        padding: 10px;
+        /* background: rgb(245, 242, 242); */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+        min-width: 150px;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        gap: 2rem;
+        height: 80%;
+    }
+
+    .product-card:hover {
+
+        transform: scale(1.05);
+    }
+
+    .product-card img {
+        width: 80%;
+        height: 65%;
+        border-radius: 10px;
+    }
+
+    .product-card h3,
+    .product-card p {
+        width: 90%;
+        word-wrap: break-word;
+    }
+
+    .carousel .carousel-slider {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 33.33%;
+        /* Ajusta para exibir 3 cards de uma vez */
+        margin: 0;
+    }
+
+
+    .carousel .carousel-slider .slide {
+        margin-bottom: 4rem;
+
+    }
+
+    .carousel .control-dots .dot {
+        background-color: #b60303;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+
+    .carousel .control-dots .dot.selected {
+        background-color: #46fa55;
+        width: 18px;
+        height: 18px;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .product-card {
+            width: 100%;
+        }
+
+        .productsTitle h2 {
+            display: none;
+        }
+
+        .product-card img {
+            width: 100%;
+            /* display: none; */
+        }
+
+        .product-card h2 {
+            width: 100%;
+            font-size: 10px;
+        }
+
+    }

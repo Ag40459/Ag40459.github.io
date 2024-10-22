@@ -7,10 +7,9 @@ function Header() {
             <div className='ContainerHeader'>
                 <img src={Logo} alt="Logo" />
                 <div className='ContainerHeaderText'>
-                    <h1>GESTÃO DE IFOOD</h1>
-                    <h2>UMA PRESTAÇÃO DE SERVIÇO</h2>
-                    <h3>COM GARANTIA DE RESULTADO OU SEU</h3>
-                    <h3 style={{ color: 'red' }}> DINHEIRO DE VOLTA</h3>
+                    <h1>FALE COM UM ESPECIALISTA EM DELIVERY PARA IFOOD</h1>
+                    <h2 style={{ color: "black" }}>TIRE SUAS DÚVIDAS E RECEBA INSIGHTS PODEROSOS PARA DESTRAVAR DE VEZ AS VENDAS DA SUA LOJA NO IFOOD.</h2>
+                    <h3 >GARANTIA DE RESULTADO OU SEU  DINHEIRO DE VOLTA</h3>
                 </div>
                 {/* 
                 <a

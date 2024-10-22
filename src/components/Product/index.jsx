@@ -20,13 +20,13 @@ function Products() {
         <section className="products">
             <div className="productsTitle">
                 <h2>MAIS PROCURADOS</h2>
-                <a
+                {/* <a
                     href="https://wa.me/+5581997420369"
                     className="whatsapp-button"
                     target="_blank"
                     rel="noopener noreferrer">
                     PEÇA AQUI
-                </a>
+                </a> */}
             </div>
             <Carrossel products={products} />
         </section>
