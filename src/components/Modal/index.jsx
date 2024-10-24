@@ -1,15 +1,21 @@
 import React from 'react';
 import './style.css';
 
-function Modal({ product, onClose }) {
-    if (!product) return null;
+function Modal({ product, image, onClose }) {
+    if (!product && !image) return null;
+
     return (
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                <img src={product.image} alt={product.title} />
-                <h3>{product.title}</h3>
-                <p>{product.description}</p>
-                {/* <a href="https://wa.me/YOUR_PHONE_NUMBER" className="whatsapp-button" target="_blank" rel="noopener noreferrer">Entre em Contato</a> */}
+                {image ? (
+                    <img src={image} alt="Imagem ampliada" className="modal-image" />
+                ) : (
+                    <>
+                        <img src={product.image} alt={product.title} />
+                        <h3>{product.title}</h3>
+                        <p>{product.description}</p>
+                    </>
+                )}
                 <button className="close-button" onClick={onClose}>Fechar</button>
             </div>
         </div>
