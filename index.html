@@ -24,7 +24,7 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logoEvolSimples.jpeg" alt="Funel logo">
+        <img src="./assets/images/logo.png" alt="Funel logo">
       </a>
 
       <div class="navbar-wrapper">
@@ -50,7 +50,7 @@
             </li>
 
             <li class="nav-item">
-              <a href="#features" class="nav-link">Sobre</a>
+              <a href="#features" class="nav-link">Avaliações</a>
             </li>
 
             <li class="nav-item">
@@ -58,6 +58,8 @@
             </li>
 
           </ul>
+
+          <!-- <button class="btn btn-primary">Fale com Especialista</button> -->
 
         </nav>
 
@@ -67,9 +69,17 @@
 
   </header>
 
+
+
+
+
   <main>
 
     <article>
+
+      <!-- 
+        - #HERO
+      -->
 
       <section class="hero" id="home">
         <div class="container">
@@ -82,17 +92,7 @@
               TIRE SUAS DÚVIDAS E RECEBA INSIGHTS PODEROSOS PARA DESTRAVAR DE VEZ AS VENDAS DA SUA LOJA NO IFOOD.
             </p>
 
-            <button class="btn btn-primary" id="contact-whatsapp">FALE COM NOSSA EQUIPE</button>
-
-            <script>
-              document.getElementById('contact-whatsapp').addEventListener('click', function () {
-                const message = "Fale com a nossa equipe";
-                const whatsappURL = `https://wa.me/5581997420369?text=${encodeURIComponent(message)}`;
-                window.open(whatsappURL, '_blank'); // Abre o WhatsApp em uma nova aba
-              });
-
-            </script>
-
+            <button class="btn btn-primary">FALE COM ESPECIALISTA EM IFOOD</button>
 
           </div>
 
@@ -103,6 +103,13 @@
         <img src="./assets/images/bg.png" alt="shape" class="shape-content">
       </section>
 
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
 
       <section class="about">
         <div class="container">
@@ -176,36 +183,45 @@
           </div>
 
           <div class="about-bottom" id="result">
+            <input type="radio" name="carousel" id="carousel-1" class="carousel-toggle" checked>
+            <input type="radio" name="carousel" id="carousel-2" class="carousel-toggle">
+            <input type="radio" name="carousel" id="carousel-3" class="carousel-toggle">
+            <input type="radio" name="carousel" id="carousel-4" class="carousel-toggle">
+            <input type="radio" name="carousel" id="carousel-5" class="carousel-toggle">
             <div class="about-bottom-content">
               <h2 class="h2 section-title">Nossos Resultados</h2>
               <div class="carousel">
-                <button class="prev">&#10094;</button>
-                <div class="carousel-inner">
-                  <div class="carousel-item">
-                    <img src="./assets/images/resultadoVania1.png" alt="cliente1resultado1">
-                    <img src="./assets/images/resultadoVania2.png" alt="cliente1resultado2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/resultadoDeliciaDiariaSorveteria1.png" alt="cliente2resultado1">
-                    <img src="./assets/images/resultadoDeliciaDiariaSorveteria2.png" alt="cliente2resultado2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/resultadoMarmitariaGrill1.png" alt="cliente3resultado1">
-                    <img src="./assets/images/resultadoMarmitariaGrill2.png" alt="cliente3resultado2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/resultadoPastelariaFamilia1.png" alt="cliente4resultado1">
-                    <img src="./assets/images/resultadoPastelariaFamilia2.png" alt="cliente4resultado2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/resultadoBistro1.png" alt="cliente5resultado1">
-                    <img src="./assets/images/resultadoBistro2.png" alt="cliente5resultado2">
-                  </div>
+                <div class="carousel-slide" id="slide-1">
+                  <img src="./assets/images/resultadoVania1.png" alt="cliente1resultado1">
+                  <img src="./assets/images/resultadoVania2.png" alt="cliente1resultado2">
                 </div>
-                <button class="next">&#10095;</button>
+                <div class="carousel-slide" id="slide-2">
+                  <img src="./assets/images/resultadoDeliciaDiariaSorveteria1.png" alt="cliente2resultado1">
+                  <img src="./assets/images/resultadoDeliciaDiariaSorveteria2.png" alt="cliente2resultado2">
+                </div>
+                <div class="carousel-slide" id="slide-3">
+                  <img src="./assets/images/resultadoMarmitariaGrill1.png" alt="cliente3resultado1">
+                  <img src="./assets/images/resultadoMarmitariaGrill2.png" alt="cliente3resultado2">
+                </div>
+                <div class="carousel-slide" id="slide-4">
+                  <img src="./assets/images/resultadoPastelariaFamilia1.png" alt="client4resultado1">
+                  <img src="./assets/images/resultadoPastelariaFamilia2.png" alt="cliente4resultado2">
+                </div>
+                <div class="carousel-slide" id="slide-5">
+                  <img src="./assets/images/resultadoBistro1.png" alt="client5resultado1">
+                  <img src="./assets/images/resultadoBistro2.png" alt="cliente5resultado2">
+                </div>
               </div>
             </div>
+            <div class="carousel-controls">
+              <label for="carousel-1" class="carousel-control"></label>
+              <label for="carousel-2" class="carousel-control"></label>
+              <label for="carousel-3" class="carousel-control"></label>
+              <label for="carousel-4" class="carousel-control"></label>
+              <label for="carousel-5" class="carousel-control"></label>
+            </div>
           </div>
+
 
 
         </div>
@@ -214,23 +230,12 @@
       <section class="features" id="features">
         <div class="container">
 
-          <h2 class="h2 section-title">A Evol Gestão Integrada</h2>
+          <h2 class="h2 section-title">Our team is made up of all different backgrounds from all over the world.</h2>
 
           <p class="section-text">
-
-            A Evol é uma agência que se destaca no suporte e consultoria para lojas de delivery no iFood. 🚀✨ Contamos
-            com uma equipe de gestores especializados, que trabalham diariamente atendendo a
-            lojas de todo o Brasil.<br><br>
-
-            Com a experiência adquirida ao longo de 2 anos de operação, desenvolvemos uma metodologia única e eficaz.
-            Seja uma loja recém-aberta ou uma grande rede com centenas de unidades, nossa abordagem personalizada está
-            pronta para ajudar! 🎯<br><br>
-
-            Nosso compromisso é fornecer suporte contínuo e estratégias que realmente funcionam, sempre visando o
-            crescimento e sucesso de nossos clientes. 📈💡 <br><br>Venha fazer parte dessa trajetória de sucesso com a
-            Evol!
-            🙌💼🌟
-
+            Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back into the
+            development of
+            the asset through its charitable foundation.
           </p>
 
           <ul class="features-list">
@@ -242,11 +247,12 @@
               </figure>
 
               <div class="feature-item-content">
-                <h3 class="h2 item-title">Está Com Dificuldade Na Precificação? </h3>
+                <h3 class="h2 item-title">Cover your everyday expenses</h3>
 
                 <p class="item-text">
-                  Nossos especialistas em precificação ficarão felizes em te ajudar. Conosco te damos suporte para
-                  aquelas dificuldades que tanto te assustam
+                  Inspiration comes in many ways and you like to save everything from. sed do eiusmod tempor incididunt
+                  ut labore et
+                  dolore magna aliqua.
                 </p>
               </div>
 
@@ -259,11 +265,12 @@
               </figure>
 
               <div class="feature-item-content">
-                <h3 class="h2 item-title">Tem Outros Canais de Vendas e Não Consegue Atender A Todos </h3>
+                <h3 class="h2 item-title">We offer low fees that are transparent</h3>
 
                 <p class="item-text">
-                  Temos uma equipe preparada para te auxiliar com seu cardápio digital, e a configurar os famoso robôs
-                  de atendimento para seu Instagram, Facebook, Whatsapp e claro o Ifood.
+                  Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back into the
+                  development of
+                  the asset through its charitable foundation.
                 </p>
               </div>
 
@@ -279,29 +286,19 @@
 
           <div class="cta-card">
 
-            <h3 class="cta-title">Teste Grátis Por 7 Dias</h3>
+            <h3 class="cta-title">Try for 7 days free</h3>
 
             <p class="cta-text">
-              Teste nosso serviço de gestão por 7 dias sem nenhum compromisso. Aproveite essa chance que é por tempo
-              limitado. Preencha o formulário.
+              Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back.
             </p>
-            <form action="" class="cta-form" id="cta-form">
-              <input type="email" name="email" id="email" placeholder="Digite seu email">
-              <button type="submit" class="btn btn-secondary">Enviar</button>
+
+            <form action="" class="cta-form">
+
+              <input type="email" name="email" placeholder="Your email address">
+
+              <button type="submit" class="btn btn-secondary">Try It Now</button>
+
             </form>
-
-            <script>
-              document.getElementById('cta-form').addEventListener('submit', function (event) {
-                event.preventDefault(); // Impede o envio padrão do formulário
-
-                const email = document.getElementById('email').value;
-                const message = `Teste Grátis 7 dias. Meu email é: ${email}`;
-                const whatsappURL = `https://wa.me/5581997420369?text=${encodeURIComponent(message)}`;
-
-                window.open(whatsappURL, '_blank'); // Abre o WhatsApp em uma nova aba
-              });
-            </script>
-
 
           </div>
 
@@ -309,58 +306,54 @@
       </section>
 
 
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
       <section class="contact" id="contact">
         <div class="container">
 
           <div class="contact-content">
-            <h2 class="h2 contact-title">Solicite o contato de um de nossos analistas</h2>
+            <h2 class="h2 contact-title">Let’s scale your brand, together</h2>
 
             <figure class="contact-banner">
               <img src="./assets/images/contact.png" alt="contact banner">
             </figure>
           </div>
 
-          <!-- <form action="" class="contact-form">
+          <form action="" class="contact-form">
 
             <div class="input-wrapper">
-              <label for="name" class="input-label">Nome *</label>
+              <label for="name" class="input-label">Name *</label>
 
-              <input type="text" name="name" id="name" required placeholder="Digite seu nome" class="input-field">
+              <input type="text" name="name" id="name" required placeholder="Type Name" class="input-field">
             </div>
 
             <div class="input-wrapper">
-              <label for="phone" class="input-label">Telefone</label>
+              <label for="phone" class="input-label">Phone</label>
 
-              <input type="tel" name="phone" id="phone" placeholder="Digite seu telefone" class="input-field">
+              <input type="tel" name="phone" id="phone" placeholder="Type Phone Number" class="input-field">
             </div>
 
             <div class="input-wrapper">
-              <label for="email" class="input-label">Email *</label>
+              <label for="email" class="input-label">Email Address *</label>
 
-              <input type="email" name="email" id="email" required placeholder="exemplo@exemplo.com"
-                class="input-field">
+              <input type="email" name="email" id="email" required placeholder="Type Email Address" class="input-field">
             </div>
 
             <div class="input-wrapper">
-              <label for="message" class="input-label">Digite sua duvida *</label>
+              <label for="message" class="input-label">How can we help? *</label>
 
-              <textarea name="message" id="message" placeholder="... gostaria de saber mais sobre o serviço de gestão"
-                required class="input-field"></textarea>
+              <textarea name="message" id="message" placeholder="Type Description" required
+                class="input-field"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Enviar Menssagem</button>
+            <button type="submit" class="btn btn-primary">Send Message</button>
 
-          </form> -->
-
-          <div class="form-container">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSdAL_N_bGgqYduHLHVDERVSmzSpcWEBlYkJbP_49lGH6yvdKw/viewform?embedded=true"
-              width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-          </div>
-
-
-
-
+          </form>
 
         </div>
       </section>
@@ -370,6 +363,13 @@
   </main>
 
 
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
   <footer>
 
     <div class="footer-top">
@@ -378,10 +378,10 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logoEvolSimples.jpeg" alt="Funel logo">
+            <img src="./assets/images/logo.png" alt="Funel logo">
           </a>
 
-          <p class="footer-text">Siga-nos em</p>
+          <p class="footer-text">Follow us on</p>
 
           <ul class="social-list">
 
@@ -502,59 +502,39 @@
 
     <div class="footer-bottom">
       <p class="copyright">
-        &copy; 2022 <a href="https://github.com/Amit-Ashok-Swain">Evol Gestão Integrada</a> All right reserved
+        &copy; 2023 <a href="https://github.com/Amit-Ashok-Swain">Amit Ashok Swain</a> All right reserved
       </p>
     </div>
 
   </footer>
 
 
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
   <a href="#top" class="go-top active" data-go-top>
     <ion-icon name="chevron-up-outline"></ion-icon>
   </a>
 
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
   <script src="./assets/js/script.js"></script>
 
+  <!-- 
+    - ionicon link
+  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <a href="https://wa.me/5581997420369?text=Vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-    class="whatsapp-button">
-    <ion-icon name="logo-whatsapp"></ion-icon>
-  </a>
-
-
 </body>
-
-
-<script>
-  let index = 0;
-
-  const showSlides = (n) => {
-    const slides = document.querySelectorAll('.carousel-item');
-    if (n >= slides.length) {
-      index = 0;
-    } else if (n < 0) {
-      index = slides.length - 1;
-    } else {
-      index = n;
-    }
-
-    slides.forEach((slide, i) => {
-      slide.style.transform = `translateX(${-(index * 100)}%)`;
-    });
-  };
-
-  document.querySelector('.prev').addEventListener('click', () => {
-    showSlides(index - 1);
-  });
-
-  document.querySelector('.next').addEventListener('click', () => {
-    showSlides(index + 1);
-  });
-
-  showSlides(index);
-</script>
-
 
 </html>
